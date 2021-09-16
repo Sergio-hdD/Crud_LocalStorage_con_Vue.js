@@ -12,6 +12,9 @@ const app = new Vue({//esta llave denota que es un array (un objeto)
             estado: false
          })
          this.nuevaTarea = ''; //limpio el input   
+        },
+        editarTarea: function(index) {
+            this.tareas[index].estado = true;
         }
     },
     computed:{//Cada vez que haya una modificación
